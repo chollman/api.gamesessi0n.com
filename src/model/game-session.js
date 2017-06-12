@@ -5,4 +5,14 @@ let gameSessionSchema = new Schema({
   name: String
 })
 
-module.exports = mongoose.model('GameSession', gameSessionSchema)
+export default mongoose.model('GameSession', gameSessionSchema)
+
+// import Sequelize from 'sequelize'
+//
+// const gameSessionModel = Sequelize.define('GameSession', {
+//   name: {
+//     type: Sequelize.STRING
+//   }
+// });
+//
+// export default gameSessionModel

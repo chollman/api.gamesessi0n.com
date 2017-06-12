@@ -4,8 +4,8 @@ import GameSession from '../model/game-session'
 export default({ config, db }) => {
   let api = Router()
 
-  // '/v1/game-sessions/add' - Create
-  api.post('/add', (req, res) => {
+  // '/v1/game-sessions' - Create
+  api.post('/', (req, res) => {
     let newGameSession = new GameSession()
     newGameSession.name = req.body.name
 
